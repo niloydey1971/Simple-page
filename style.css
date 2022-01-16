@@ -8,7 +8,8 @@ main{
   }
 .sec1{
     display: flex;
-    justify-content: center;   
+    justify-content: center; 
+    text-align: justify;  
 }
 .sec1left{
     margin-right: 150px;
@@ -37,15 +38,22 @@ main{
     border-radius: 10px;
 }
 .gameshop{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     padding: 5px;
     width: 800px;
     margin-top: 100px;
-    margin-left: 400px;
+    margin-left: 350px;
     font-size: 30px;
     text-align: center;
     text-decoration: none;
+    font-size: 15px;
+}
+.gameshop img{
+    height:80px;
+    width: 80px;
 }
 .menubutton:hover{
     background-color: rgb(159, 156, 161);
@@ -197,23 +205,33 @@ footer p{
         
     }
     .extra{
-        margin-right: 70px;
+        margin-right: 100px;
     }
     .lastsection{
         margin: 40px;
-        margin-left: 120px;
+        margin-left: 80px;
     }
     .collection{
         margin-top: 90px;
     }
     .gameshop{
+        display:grid;
+        grid-template-columns: repeat(1, 0.5fr);
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        padding: 5px;
+        width: 800px;
+        margin-top: 1000px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 30px;
         text-align: center;
         text-decoration: none;
-        margin-left: 50px;
-        
-        margin-top: 400px;
-        display: flex; 
-        font-size: 20px;
+        font-size: 15px;
+    }
+    .gameshop img{
+        height:80px;
+        width: 80px;
     }
 }
 @media only screen and (min-width:688px) and (max-width:992px){
@@ -249,16 +267,30 @@ footer p{
     }
     .lastsection{
         margin-top: 50px;
-        margin: 200px;
+        /* margin: 200px; */
+        margin-left: 200px;
+        margin-right: 200px;
     }
     .collection{
         margin-top: 20px;
     }
     .gameshop{
-        margin-left: 80px;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        padding: 5px;
+        width: 800px;
         margin-top: 100px;
+        margin-left: 40px;
+        margin-right: 100px;
         font-size: 30px;
         text-align: center;
+        text-decoration: none;
+        font-size: 15px;
     }
-
+    .gameshop img{
+        height:80px;
+        width: 80px;
+    }
 }
