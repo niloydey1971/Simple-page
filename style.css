@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+main{
+    overflow-x: hidden;
+    background-color: blanchedalmond;
+  }
+.sec1{
+    display: flex;
+    justify-content: center;   
+}
+.sec1left{
+    margin-right: 150px;
+    height: 100px;
+    margin-left: 100px;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-gap: 50px;
+    font-size: 20px;
+    font-weight: 100;
+    justify-content: center;   
+}
+.menu{
+    background-color: orange;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-align: justify;
+    
+}
+.menubutton{
+    border-radius: 10px;
+}
+.gameshop{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 5px;
+    width: 800px;
+    margin-top: 100px;
+    margin-left: 400px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+.menubutton:hover{
+    background-color: rgb(159, 156, 161);
+    padding: 5px;
+    font-weight: 400px;
+    border: 3px solid rgb(115, 115, 128);
+    border-radius: 30px;
+    height: 30px;
+    width: 100px;
+    cursor:pointer;
+}
+.menu img{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.price{
+    font-size: 20px;
+}
+h1{
+    background-color: aqua;
+    display:inline;
+}
+.htitle{
+    text-align: center;
+    text-transform: uppercase;
+}
+footer{
+    margin-top: 100px;
+    background-color: rgb(3, 43, 3);
+    height: 100px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    color: white;
+
+    
+}
+
+footer h2{
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+footer p{
+    color: red;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+.topbutton{
+    border: 3px solid black;
+    background-color: oldlace;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.topbutton:hover{
+    background-color: indianred;
+    padding: 5px;
+    border: 3px solid navy;
+    border-radius: 30px;
+    height: 30px;
+    width: 100px;
+}
+.sec1right{
+    margin-right: 80px;
+}
+.sec1right:hover{
+    transform: scale(1.3);
+    box-shadow: none;
+    border: none;
+    background: none;
+    margin-top: 30px;
+    border-radius: 50px;
+    margin-right: 100px;
+}
+.fa-star{
+    font-size: 12px;
+    }
+.fa-star.filled{
+        color: #FB8200;
+    }
+.fa-star.empty{
+        color:#D2DDEA;
+    
+    }
+.extra{
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 175px;
+}
+.extra  a{
+    text-decoration: none;
+    color: #1f1102;
+    font-size: 20px;
+}
+
+.collection{
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(218, 23, 23);
+    margin-top: 200px;
+}
+.lastsection{
+    padding: 20px;
+    width: 50%;
+    background-color: cornflowerblue;
+    margin-right: 400px;
+    margin-left: 400px;
+    border-radius: 20px;
+    text-align: center;
+} 
+.link_btn{
+    text-decoration: none;
+    color:whitesmoke;
+    background-color: rgb(24, 23, 23);
+    padding: 10px;
+    border-radius: 10px;
+}
+@media (max-width: 688px) {
+    main{
+        width:100%;
+        overflow-x: hidden;
+        
+    }
+    .sec1{
+        flex-wrap:wrap-reverse;
+        margin-top: 50px;
+        margin-left: 50px;
+        padding: auto; 
+       
+    }
+    .sec1left{
+        text-align: justify;
+    }
+    
+    .menu{
+    background-color: orange;
+    margin-bottom: 20px;
+    }
+    .grid-container{
+        grid-template-columns: repeat(1, 350px);
+        
+    }
+    .extra{
+        margin-right: 70px;
+    }
+    .lastsection{
+        margin: 40px;
+        margin-left: 120px;
+    }
+    .collection{
+        margin-top: 90px;
+    }
+    .gameshop{
+        text-align: center;
+        text-decoration: none;
+        margin-left: 50px;
+        
+        margin-top: 400px;
+        display: flex; 
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:688px) and (max-width:992px){
+    main{
+        width:100%;
+        overflow-x: hidden;
+
+    }
+    .sec1left{
+        text-align: justify;
+
+    }
+    .sec1right{
+        width: 33%;
+        margin-top: 200px;
+        margin-right: 100px;
+        
+    }
+    .sec1{
+        
+        margin-top: 80px;
+        margin-bottom: 200px;
+    }
+    .sec1right:hover{
+        margin-top: 200px;
+        margin-right: 100px;
+    }
+    .menu{
+    background-color: orange;
+    }
+    .grid-container{
+        grid-template-columns: repeat(2, 350px);   
+    }
+    .lastsection{
+        margin-top: 50px;
+        margin: 200px;
+    }
+    .collection{
+        margin-top: 20px;
+    }
+    .gameshop{
+        margin-left: 80px;
+        margin-top: 100px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+}
